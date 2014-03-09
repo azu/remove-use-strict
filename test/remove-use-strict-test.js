@@ -58,8 +58,9 @@ describe("removeUseStrict", function () {
         it("should remove the other one", function () {
             var code = '"use strict";\n'
                 + '"use strict";'
-                + '"use strict";';
-            assert.deepEqual(rst(code), "'use strict';");
+                + '"use strict";'
+                + 'var a = 1;';
+            assert.deepEqual(rst(code), "'use strict';\nvar a = 1;");
         });
     });
     context("with force option", function () {
