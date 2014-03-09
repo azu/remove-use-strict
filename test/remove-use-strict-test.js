@@ -74,7 +74,7 @@ describe("removeUseStrict", function () {
     });
     context("with format aray", function () {
         it("should preserve ArrayExpression []", function () {
-            var code = '[1,2,3];';
+            var code = 'fn([1,2,3]);';
             assert.deepEqual(rst(code), code);
         });
     });
