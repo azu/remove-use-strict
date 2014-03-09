@@ -54,13 +54,20 @@ describe("removeUseStrict", function () {
             assert.deepEqual(rst(code), 'var a = 1;');
         });
     });
-
+    context("with duplicate use strict", function () {
+        it("should remove the other one", function () {
+            var code = '"use strict";\n'
+                + '"use strict";'
+                + '"use strict";';
+            assert.deepEqual(rst(code), "'use strict';");
+        });
+    });
     context("with force option", function () {
         it("should remove all use strict", function () {
             var code = '"use strict";\n' +
                 'function a(){ "use strict"; \n var a = "use strict"; }';
             assert.deepEqual(rst(code, {
-                force : true
+                force: true
             }), deparse(parse('function a(){  var a = "use strict"; }')));
         });
     });
