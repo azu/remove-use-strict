@@ -5,7 +5,7 @@
   "repository": {
     "url": "git://github.com/azu/remove-strict-mode.git"
   },
-  "main": "lib/remove-strict-mode.js",
+  "main": "lib/remove-use-strict.js",
   "scripts": {
     "test": "mocha test/*.js"
   },
