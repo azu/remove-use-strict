@@ -1,7 +1,7 @@
 {
   "name": "remove-use-strict",
   "description": "remove unnecessary 'use strict';",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "repository": {
     "url": "git://github.com/azu/remove-strict-mode.git"
   },
