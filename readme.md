@@ -10,7 +10,7 @@ This node module remove unnecessary `"use strict";` literal.
 
 via [ECMAScript Language Specification - ECMA-262 Edition 5.1](http://ecma-international.org/ecma-262/5.1/#sec-14.1 "ECMAScript Language Specification - ECMA-262 Edition 5.1")
 
-This module remove `"use strict";`  which doens't delective prologue.
+This module remove `"use strict";`  which isn't delective prologue.
 
 (also has `force` option)
 
