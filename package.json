@@ -1,0 +1,29 @@
+{
+  "name": "remove-use-strict",
+  "description": "remove unnecessary 'use strict';",
+  "version": "0.0.1",
+  "repository": {
+    "url": "git://github.com/azu/remove-strict-mode.git"
+  },
+  "main": "lib/remove-strict-mode.js",
+  "scripts": {
+    "test": "tap test/*.js"
+  },
+  "author": "azu",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/azu/remove-strict-mode/issues"
+  },
+  "dependencies": {
+    "lodash": "~2.4.1",
+    "falafel": "~0.3.1",
+    "estraverse": "~1.5.0",
+    "esprima": "~1.0.4",
+    "escodegen": "~1.2.0"
+  },
+  "devDependencies": {
+    "power-assert": "~0.3.1",
+    "mocha": "~1.17.1",
+    "espower-loader": "~0.3.1"
+  }
+}
