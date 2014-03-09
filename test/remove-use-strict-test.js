@@ -72,4 +72,10 @@ describe("removeUseStrict", function () {
             }), deparse(parse('function a(){  var a = "use strict"; }')));
         });
     });
+    context("with format aray", function () {
+        it("should preserve ArrayExpression []", function () {
+            var code = '[1,2,3];';
+            assert.deepEqual(rst(code), code);
+        });
+    });
 });
