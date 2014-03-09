@@ -7,7 +7,7 @@
   },
   "main": "lib/remove-strict-mode.js",
   "scripts": {
-    "test": "tap test/*.js"
+    "test": "mocha test/*.js"
   },
   "author": "azu",
   "license": "MIT",
