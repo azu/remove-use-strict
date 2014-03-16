@@ -22,6 +22,10 @@ This module remove `"use strict";`  which isn't delective prologue.
 npm install remove-use-strict
 ```
 
+### Task
+
+* [azu/gulp-remove-use-strict](https://github.com/azu/gulp-remove-use-strict "azu/gulp-remove-use-strict")
+
 ## Usage
 
 ``` js
