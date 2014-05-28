@@ -1,4 +1,4 @@
-# remove-use-strict [![Build Status](https://travis-ci.org/azu/remove-use-strict.png?branch=master)](https://travis-ci.org/azu/remove-use-strict)
+# remove-use-strict [![Build Status](https://travis-ci.org/azu/remove-use-strict.svg?branch=master)](https://travis-ci.org/azu/remove-use-strict)
 
 This node module remove unnecessary `"use strict";` literal.
 
