@@ -1,7 +1,7 @@
 {
   "name": "remove-use-strict",
   "description": "remove unnecessary 'use strict';",
-  "version": "0.0.5",
+  "version": "1.0.0",
   "repository": "azu/remove-use-strict",
   "main": "lib/remove-use-strict.js",
   "scripts": {
