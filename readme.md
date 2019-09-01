@@ -29,7 +29,7 @@ npm install remove-use-strict
 ## Usage
 
 ``` js
-var removeUst = require("../lib/remove-use-strict");
+var removeUst = require("remove-use-strict");
 var code = 'var a = 1;\n' +
     '"use strict";\n"use strict";';// unnecessary use strict...
 removeUst(code); // => 'var a = 1;'
@@ -38,11 +38,12 @@ removeUst(code); // => 'var a = 1;'
 force option : true
 
 ``` js
+var removeUst = require("remove-use-strict");
 var code = '"use strict";\n' +
     'function a(){ "use strict"; \n var a = "use strict"; }';
 removeUst(code, {
     force : true
-}) // => 'function a(){  var a = "use strict"; }'
+}) // => "function a() {\n    var a = 'use strict';\n}"
 ```
 
 
