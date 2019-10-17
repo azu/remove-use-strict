@@ -1,8 +1,8 @@
 # remove-use-strict [![Build Status](https://travis-ci.org/azu/remove-use-strict.svg?branch=master)](https://travis-ci.org/azu/remove-use-strict)
 
-This node module remove unnecessary `"use strict";` literal.
+This node module removes unnecessary `"use strict";` literals from JavaScript code.
 
-### Unnecessary `"use strict";` ?
+## Unnecessary `"use strict";` ?
 
 > A Use Strict Directive is an ExpressionStatement in a Directive Prologue whose StringLiteral is either the exact character sequences "use strict" or 'use strict'. A Use Strict Directive may not contain an EscapeSequence or LineContinuation.
 
@@ -12,9 +12,7 @@ via [ECMAScript Language Specification - ECMA-262 Edition 5.1](http://ecma-inter
 
 and [&#34;use strict&#34; - blog.niw.at](http://blog.niw.at/post/26687866336 "&#34;use strict&#34; - blog.niw.at")
 
-This module remove `"use strict";`  which isn't delective prologue.
-
-(also has `force` option)
+This module removes any instances of `"use strict";` that aren't directive prologues. It also has a `force` option, which will do the removal regardless.
 
 ## Installation
 
@@ -22,9 +20,7 @@ This module remove `"use strict";`  which isn't delective prologue.
 npm install remove-use-strict
 ```
 
-### Task
-
-* [azu/gulp-remove-use-strict](https://github.com/azu/gulp-remove-use-strict "azu/gulp-remove-use-strict")
+If you're using gulp, the equivalent gulp task [azu/gulp-remove-use-strict](https://github.com/azu/gulp-remove-use-strict) may be helpful.
 
 ## Usage
 
