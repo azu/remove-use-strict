@@ -22,24 +22,44 @@ npm install remove-use-strict
 
 If you're using gulp, the equivalent gulp task [azu/gulp-remove-use-strict](https://github.com/azu/gulp-remove-use-strict) may be helpful.
 
-## Usage
+## Usage Examples
 
 ``` js
-var removeUst = require("remove-use-strict");
-var code = 'var a = 1;\n' +
-    '"use strict";\n"use strict";';// unnecessary use strict...
-removeUst(code); // => 'var a = 1;'
+const removeUst = require("remove-use-strict");
+
+let code = `
+  var a = 1;
+  "use strict";
+  "use strict";
+`;
+
+removeUst(code);
+
+// Yields:
+// var a = 1;
 ```
 
-force option : true
+### Force option
 
 ``` js
-var removeUst = require("remove-use-strict");
-var code = '"use strict";\n' +
-    'function a(){ "use strict"; \n var a = "use strict"; }';
+const removeUst = require("remove-use-strict");
+
+let code = `
+  "use strict";
+  function a(){
+    "use strict";
+    let a = "use strict";
+  }
+`;
+
 removeUst(code, {
-    force : true
-}) // => "function a() {\n    var a = 'use strict';\n}"
+  force : true
+});
+
+// Yields:
+// function a() {
+//   var a = 'use strict';
+// }
 ```
 
 
